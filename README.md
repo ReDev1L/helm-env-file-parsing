@@ -10,7 +10,7 @@ KEY_ENV3=VAL_ENV3      KEY_ENV3: VAL_ENV3
 ```
  {{ tuple . "configs/backend/php-fpm/.env" | include "env.parseFile" | indent 2}}
 ```
-## Example fule:
+## Example file:
 ```
 KEY_ENV1=VAL_ENV1
 KEY_ENV2=VAL_ENV2
