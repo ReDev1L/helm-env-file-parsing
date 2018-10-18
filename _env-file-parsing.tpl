@@ -14,7 +14,7 @@ Usage:
 {{- range $scope.Files.Lines $filePath -}}
 {{- $a := splitn "=" 2 . -}}
 {{- if $a._0 -}}
-{{ $a._0 }}: {{ $a._1 }}
+{{ $a._0 }}: {{ $a._1 | quote }}
 {{ end -}}
 {{- end -}}
 {{- end -}}
