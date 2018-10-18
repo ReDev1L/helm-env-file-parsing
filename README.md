@@ -21,5 +21,5 @@ KEY_ENV3="${VAL_ENV3}"
 ```
   KEY_ENV1: base64(VAL_ENV1)
   KEY_ENV2: base64(VAL_ENV2)
-  KEY_ENV3: base64(VAL_ENV3)
+  KEY_ENV3: base64("${VAL_ENV3}")
 ```
