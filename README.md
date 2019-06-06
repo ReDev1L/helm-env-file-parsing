@@ -6,7 +6,11 @@ KEY_ENV2=VAL_ENV2  =>  KEY_ENV2: base64(VAL_ENV2)
 KEY_ENV3=VAL_ENV3      KEY_ENV3: base64(VAL_ENV3)
 ```
 
-## Usage:
+## Usage:.
+```
+{{ tuple . ".env" | include "env.parseFile" | indent 2 | trimSuffix "\n" }}
+```
+
 In secret template:
 ```
 kind: Secret
